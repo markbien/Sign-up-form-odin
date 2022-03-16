@@ -6,13 +6,104 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;;
 }
 
 .sidebar {
-    background: black;
-    width: 45%;
+    width: max(1000px);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar {
+    background-image: url('images/leaves.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo,
+.sidebar > span {
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    color: white;
+}
+
+.sidebar span {
+    padding: 10px 0;
+}
+
+.sidebar > span > a {
+    color: white;
+}
+
+.logo > img {
+    height: 70px;
+}
+
+.logo > p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 4.5rem;
+    margin-left: 25px;
 }
 
 main {
-    background: #ccc
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main > div {
+    padding: 4%;
+}
+
+main >.form {
+    background: rgba(190, 190, 190, 0.1);
+    box-shadow: 1px 5px rgba(0,0,0,0.1);
+    width: 90%;
+}
+
+main > .form > h1 {
+    color: rgba(0,0,0,0.75);
+}
+
+.form-container {
+    display: flex;
+}
+
+.form-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-subcontainer > input{
+    width: 80%;
+    padding: 3px;
+    font-size: 1.3rem;
+}
+
+.form-subcontainer > label {
+    text-transform: uppercase;
+}
+
+.signup{
+    width: 90%;
+}
+
+.signup button {
+    padding: 10px 15px;
+    background: #596D48;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
 }
