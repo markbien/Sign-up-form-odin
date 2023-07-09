@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ysabeau+SC&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.background {
+  flex: 1;
+  background-image: url(images/odin-background.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.background > div {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: relative;
+  top: 150px;
+
+  font-family: "Ysabeau SC", sans-serif;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.background > p,
+.background a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.background img {
+  height: 100px;
+}
+
+main {
+  flex: 2;
+}
