@@ -178,5 +178,11 @@ a {
 }
 
 .error {
-  outline-color: red;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.match {
+  border: 2px solid lightgreen;
+  border-radius: 4px;
 }
