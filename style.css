@@ -129,6 +129,10 @@ form input {
   letter-spacing: 1px;
 }
 
+form input:focus {
+  outline-color: lightblue
+}
+
 button {
   padding: 5px 10px;
   border-radius: 5px;
@@ -171,4 +175,8 @@ button:hover {
 
 a {
   text-decoration: none;
+}
+
+.error {
+  outline-color: red;
 }
